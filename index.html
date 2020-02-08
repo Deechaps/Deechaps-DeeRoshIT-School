@@ -1,0 +1,411 @@
+<html>
+<head>
+<style>
+
+ul {
+  list-style-type: none;
+  margin: 0.7;
+  padding: 0.7;
+  overflow: hidden;
+  background-color: #4CAF50;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 22px 24px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red; opacity: 0.7;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropbtn .active {
+  background-color: #4CAF50;
+}
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.7;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+
+
+
+
+<ul>
+<li class="dropdown">
+    <a class="dropbtn" href="javascript:void(0)">RDBMS Concept</a>
+    <div class="dropdown-content">
+      <a href="https://wehavetoknowthis.blogspot.com/2020/01/rdms-introduction.html">Basic Introduction</a>
+      <a href="https://wehavetoknowthis.blogspot.com/2020/01/e-r-model.html">E-R Modeling</a>
+      <a href="https://wehavetoknowthis.blogspot.com/2020/01/basic-of-keys.html">Basic of Keys</a>
+      <a href="https://wehavetoknowthis.blogspot.com/2020/01/normalization.html">Normalization</a>
+      <a href="https://wehavetoknowthis.blogspot.com/2020/01/transactions-and-concurrency.html">Transaction And Concurrency</a>
+      <a href="https://wehavetoknowthis.blogspot.com/2020/01/sql-and-relational-algebra-ddl-dml-dcl.html">SQL and Relational algebra</a>
+      <a href="https://wehavetoknowthis.blogspot.com/2020/01/indexing.html">Indexing</a>
+      <a href="https://wehavetoknowthis.blogspot.com">Blogs</a>
+    </div>
+</li>
+<li class="dropdown">
+    <a class="dropbtn" href="javascript:void(0)">BI Concept</a>
+    <div class="dropdown-content">
+      <a href="https://wehavetoknowthis.blogspot.com/2019/07/business-intelligence-secret-for-success.html">BI Introduction</a>
+      <a href="https://wehavetoknowthis.blogspot.com/2019/07/integration-services-2016.html">SSIS</a>
+      <a href="https://wehavetoknowthis.blogspot.com/2019/07/the-most-important-ssis-tasks.html">SSRS</a>
+      <a href="https://wehavetoknowthis.blogspot.com/2019/07/drive-into-ssis-tips-and-tricks.html">SSAS</a>
+      <a href="https://wehavetoknowthis.blogspot.com/2019/07/ssis-performance-via-parallel-execution.html">Power-Bi</a>
+      <a href="https://wehavetoknowthis.blogspot.com">QlikSense</a>
+    </div>
+</li>
+<li class="dropdown">
+    <a class="dropbtn" href="javascript:void(0)">DataWarehouse</a>
+    <div class="dropdown-content">
+      <a href="https://wehavetoknowthis.blogspot.com/2020/01/data-warehouseolap.html">Meaning and Architecture</a>
+      <a href="https://wehavetoknowthis.blogspot.com/2020/01/olap-server-models.html">OLAP Models</a>
+      <a href="https://wehavetoknowthis.blogspot.com/2020/01/ods-vs-data-mart.html">ODS and Data Mart</a>
+      <a href="https://wehavetoknowthis.blogspot.com/2020/01/data-warehouse-schema.html">DW Schema</a>
+    </div>
+</li>
+<li class="dropdown">
+    <a class="dropbtn" href="javascript:void(0)">HTML</a>
+    <div class="dropdown-content">
+      <a href="https://wehavetoknowthis.blogspot.com/2020/01/html.html">HTML Concept</a>
+      <a href="https://deechaps.github.io/Startup_blog/">Project Work</a>
+    </div>
+</li>
+<li class="dropdown">
+    <a class="dropbtn" href="javascript:void(0)">CSS</a>
+    <div class="dropdown-content">
+      <a href="https://wehavetoknowthis.blogspot.com/2020/01/css.html">CSS Concept</a>
+      <a href="https://deechaps.github.io/Home/">Project Work</a>
+    </div>
+</li>
+<li class="dropdown">
+    <a class="dropbtn" href="javascript:void(0)">JavaScript</a>
+    <div class="dropdown-content">
+      <a href="https://wehavetoknowthis.blogspot.com/2020/01/javascript.html">JavaScript Concept</a>
+      <a href="https://www.blogger.com/blogger.g?blogID=1137880089453320867#">Project Work</a>
+    </div>
+</li>
+<li class="dropdown">
+    <a class="dropbtn" href="javascript:void(0)">Project</a>
+    <div class="dropdown-content">
+      <a href="https://www.blogger.com/blogger.g?blogID=1137880089453320867#">Project Work</a>
+    </div>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="background-attachment: initial; background-clip: initial; background-image: initial; background-origin: initial; background-position: initial; background-repeat: initial; background-size: initial; color: #1c1e29; margin-bottom: 0pt; margin-top: 0pt;">
+<h2>
+<div align="center" class="MsoNormal" style="line-height: normal; mso-margin-bottom-alt: auto; mso-margin-top-alt: auto; mso-outline-level: 2; text-align: center;">
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: center;">
+<b><u><span style="background: rgb(238, 238, 238); font-family: &quot;Lucida Calligraphy&quot;; font-size: 18pt;">SQL/BI
+CLASS&nbsp;<i>[40 hr]</i></span></u></b><b><span style="font-family: &quot;Lucida Calligraphy&quot;; font-size: 18pt;"><o:p></o:p></span></b></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: center;">
+<b><span style="background: rgb(238, 238, 238); font-family: &quot;Lucida Calligraphy&quot;; font-size: 13.5pt;">SQL:
+[12 hr], SSIS: [12 hr], SSRS: [6 hr], SSAS: [8 hr]</span></b><b><span style="font-family: &quot;Lucida Calligraphy&quot;; font-size: 18pt;"><o:p></o:p></span></b></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: left;">
+<b><u><span style="background: rgb(238, 238, 238); font-family: &quot;Lucida Calligraphy&quot;; font-size: 13.5pt;">SQL: [12 hr]:</span></u></b><b><span style="font-family: &quot;Lucida Calligraphy&quot;; font-size: 18pt;"><o:p></o:p></span></b></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: left;">
+<b><span style="background: rgb(238, 238, 238); font-family: &quot;Lucida Calligraphy&quot;; font-size: 13.5pt;">&nbsp;&nbsp;1) SQL Introduction and Download</span></b><b><span style="font-family: &quot;Lucida Calligraphy&quot;; font-size: 18pt;"><o:p></o:p></span></b></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: left;">
+<b><span style="background: rgb(238, 238, 238); font-family: &quot;Lucida Calligraphy&quot;; font-size: 13.5pt;">&nbsp;&nbsp;2) Creating Tables and Other
+Permanent Objects</span></b><b><span style="font-family: &quot;Lucida Calligraphy&quot;; font-size: 18pt;"><o:p></o:p></span></b></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: left;">
+<b><span style="background: rgb(238, 238, 238); font-family: &quot;Lucida Calligraphy&quot;; font-size: 13.5pt;">&nbsp;&nbsp;3) Writing Single Table Queries
+-Building Your Foundation</span></b><b><span style="font-family: &quot;Lucida Calligraphy&quot;; font-size: 18pt;"><o:p></o:p></span></b></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: left;">
+<b><span style="background: rgb(238, 238, 238); font-family: &quot;Lucida Calligraphy&quot;; font-size: 13.5pt;">&nbsp;&nbsp;4) T-SQL Fundamentals: System
+Functions and Query Writing</span></b><b><span style="font-family: &quot;Lucida Calligraphy&quot;; font-size: 18pt;"><o:p></o:p></span></b></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: left;">
+<b><span style="background: rgb(238, 238, 238); font-family: &quot;Lucida Calligraphy&quot;; font-size: 13.5pt;">&nbsp;&nbsp;5) Data Types, Temp table,
+Derived table, IF, and Variables</span></b><b><span style="font-family: &quot;Lucida Calligraphy&quot;; font-size: 18pt;"><o:p></o:p></span></b></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: left;">
+<b><span style="background: rgb(238, 238, 238); font-family: &quot;Lucida Calligraphy&quot;; font-size: 13.5pt;">&nbsp;&nbsp;6)&nbsp;<pwa class="pwa-mark pwa-mark-done" data-pwa-category="spelling" data-pwa-dictionary-word="Subqueries" data-pwa-heavy="false" data-pwa-hint="Unknown word: Subqueries" data-pwa-id="pwa-670A5E0A24235DF8D1CAEED26F6F48C9" data-pwa-rule-id="SIMPLE_SPELLING" data-pwa-suggestions="squares~Squires~isobars~Siqueiros">Subqueries</pwa>, CTEs, Set,
+Rank Operations and More</span></b><b><span style="font-family: &quot;Lucida Calligraphy&quot;; font-size: 18pt;"><o:p></o:p></span></b></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: left;">
+<b><span style="background: rgb(238, 238, 238); font-family: &quot;Lucida Calligraphy&quot;; font-size: 13.5pt;">&nbsp;&nbsp;7) SQL Constraints and Indexes</span></b><b><span style="font-family: &quot;Lucida Calligraphy&quot;; font-size: 18pt;"><o:p></o:p></span></b></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: left;">
+<b><span style="background: rgb(238, 238, 238); font-family: &quot;Lucida Calligraphy&quot;; font-size: 13.5pt;">&nbsp;&nbsp;8) SQL JOINS</span></b><b><span style="font-family: &quot;Lucida Calligraphy&quot;; font-size: 18pt;"><o:p></o:p></span></b></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: left;">
+<b><span style="background: rgb(238, 238, 238); font-family: &quot;Lucida Calligraphy&quot;; font-size: 13.5pt;">&nbsp;&nbsp;9) Stored Procedure</span></b><b><span style="font-family: &quot;Lucida Calligraphy&quot;; font-size: 18pt;"><o:p></o:p></span></b></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: left;">
+<b><span style="background: rgb(238, 238, 238); font-family: &quot;Lucida Calligraphy&quot;; font-size: 13.5pt;">&nbsp;&nbsp;10) Triggers, View, and Functions</span></b><b><span style="font-family: &quot;Lucida Calligraphy&quot;; font-size: 18pt;"><o:p></o:p></span></b></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: left;">
+<b><span style="background: rgb(238, 238, 238); font-family: &quot;Lucida Calligraphy&quot;; font-size: 13.5pt;">&nbsp;&nbsp;11) Transactions, Locking and
+Blocking</span></b><b><span style="font-family: &quot;Lucida Calligraphy&quot;; font-size: 18pt;"><o:p></o:p></span></b></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: left;">
+<b><span style="background: rgb(238, 238, 238); font-family: &quot;Lucida Calligraphy&quot;; font-size: 13.5pt;">&nbsp;&nbsp;12) Execution Plan and
+Performance Tuning Tips</span></b><b><span style="font-family: &quot;Lucida Calligraphy&quot;; font-size: 18pt;"><o:p></o:p></span></b></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: left;">
+<b><u><span style="background: rgb(238, 238, 238); font-family: &quot;Lucida Calligraphy&quot;; font-size: 13.5pt;">SSIS: [12 hr]:</span></u></b><b><span style="font-family: &quot;Lucida Calligraphy&quot;; font-size: 18pt;"><o:p></o:p></span></b></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: left;">
+<b><span style="background: rgb(238, 238, 238); font-family: &quot;Lucida Calligraphy&quot;; font-size: 13.5pt;">&nbsp;&nbsp;1) Introduction of Package
+Creation</span></b><b><span style="font-family: &quot;Lucida Calligraphy&quot;; font-size: 18pt;"><o:p></o:p></span></b></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: left;">
+<b><span style="background: rgb(238, 238, 238); font-family: &quot;Lucida Calligraphy&quot;; font-size: 13.5pt;">&nbsp;&nbsp;2) Tools and Transformations</span></b><b><span style="font-family: &quot;Lucida Calligraphy&quot;; font-size: 18pt;"><o:p></o:p></span></b></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: left;">
+<b><span style="background: rgb(238, 238, 238); font-family: &quot;Lucida Calligraphy&quot;; font-size: 13.5pt;">&nbsp;&nbsp;3) Common SSIS Tasks</span></b><b><span style="font-family: &quot;Lucida Calligraphy&quot;; font-size: 18pt;"><o:p></o:p></span></b></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: left;">
+<b><span style="background: rgb(238, 238, 238); font-family: &quot;Lucida Calligraphy&quot;; font-size: 13.5pt;">&nbsp;&nbsp;4) Saving, Encrypting, and
+Logging</span></b><b><span style="font-family: &quot;Lucida Calligraphy&quot;; font-size: 18pt;"><o:p></o:p></span></b></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: left;">
+<b><span style="background: rgb(238, 238, 238); font-family: &quot;Lucida Calligraphy&quot;; font-size: 13.5pt;">&nbsp;&nbsp;5) Configuration and Deployment</span></b><b><span style="font-family: &quot;Lucida Calligraphy&quot;; font-size: 18pt;"><o:p></o:p></span></b></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: left;">
+<b><span style="background: rgb(238, 238, 238); font-family: &quot;Lucida Calligraphy&quot;; font-size: 13.5pt;">&nbsp;&nbsp;6) Project work and Interview
+Question</span></b><b><span style="font-family: &quot;Lucida Calligraphy&quot;; font-size: 18pt;"><o:p></o:p></span></b></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: left;">
+<b><u><span style="background: rgb(238, 238, 238); font-family: &quot;Lucida Calligraphy&quot;; font-size: 13.5pt;">SSRS: [6 hr]:</span></u></b><b><span style="font-family: &quot;Lucida Calligraphy&quot;; font-size: 18pt;"><o:p></o:p></span></b></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: left;">
+<b><span style="background: rgb(238, 238, 238); font-family: &quot;Lucida Calligraphy&quot;; font-size: 13.5pt;">&nbsp;&nbsp;1) Employee Details, Drill down E
+Details Reports</span></b><b><span style="font-family: &quot;Lucida Calligraphy&quot;; font-size: 18pt;"><o:p></o:p></span></b></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: left;">
+<b><span style="background: rgb(238, 238, 238); font-family: &quot;Lucida Calligraphy&quot;; font-size: 13.5pt;">&nbsp;&nbsp;2) Parameterized, Cascaded
+Parameterized Reports</span></b><b><span style="font-family: &quot;Lucida Calligraphy&quot;; font-size: 18pt;"><o:p></o:p></span></b></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: left;">
+<b><span style="background: rgb(238, 238, 238); font-family: &quot;Lucida Calligraphy&quot;; font-size: 13.5pt;">&nbsp;&nbsp;3) Sub/Chart Report and Interview
+Questions</span></b><b><span style="font-family: &quot;Lucida Calligraphy&quot;; font-size: 18pt;"><o:p></o:p></span></b></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: left;">
+<b><u><span style="background: rgb(238, 238, 238); font-family: &quot;Lucida Calligraphy&quot;; font-size: 13.5pt;">SSAS: [8 hr]:</span></u></b><b><span style="font-family: &quot;Lucida Calligraphy&quot;; font-size: 18pt;"><o:p></o:p></span></b></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: left;">
+<b><span style="background: rgb(238, 238, 238); font-family: &quot;Lucida Calligraphy&quot;; font-size: 13.5pt;">&nbsp;&nbsp;1) Introductions and Data
+warehouse concept</span></b><b><span style="font-family: &quot;Lucida Calligraphy&quot;; font-size: 18pt;"><o:p></o:p></span></b></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: left;">
+<b><span style="background: rgb(238, 238, 238); font-family: &quot;Lucida Calligraphy&quot;; font-size: 13.5pt;">&nbsp;&nbsp;2) Cube Development, Dimension
+and Facts design</span></b><b><span style="font-family: &quot;Lucida Calligraphy&quot;; font-size: 18pt;"><o:p></o:p></span></b></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: left;">
+<b><span style="background: rgb(238, 238, 238); font-family: &quot;Lucida Calligraphy&quot;; font-size: 13.5pt;">&nbsp;&nbsp;3) Hierarchies, Perspectives,
+Partition, Storage, and Security</span></b><b><span style="font-family: &quot;Lucida Calligraphy&quot;; font-size: 18pt;"><o:p></o:p></span></b></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: left;">
+<b><span style="background: rgb(238, 238, 238); font-family: &quot;Lucida Calligraphy&quot;; font-size: 13.5pt;">&nbsp;4) Tabular Analysis Model
+and&nbsp;<pwa class="pwa-mark pwa-mark-done" data-pwa-category="spelling" data-pwa-dictionary-word="PowerBI" data-pwa-heavy="false" data-pwa-hint="Unknown word: PowerBI" data-pwa-id="pwa-64B47332F6A33AC14504A0CAEB3B0102" data-pwa-rule-id="SIMPLE_SPELLING" data-pwa-suggestions="powerboat">PowerBI</pwa>&nbsp;</span></b><b><span style="font-family: &quot;Lucida Calligraphy&quot;; font-size: 18pt;"><o:p></o:p></span></b></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: left;">
+<b><u><span style="background: rgb(238, 238, 238); font-family: &quot;Lucida Calligraphy&quot;; font-size: 13.5pt;">Bonus Class [2 hr]:</span></u></b><b><span style="font-family: &quot;Lucida Calligraphy&quot;; font-size: 18pt;"><o:p></o:p></span></b></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: left;">
+<b><span style="background: rgb(238, 238, 238); font-family: &quot;Lucida Calligraphy&quot;; font-size: 13.5pt;">&nbsp;&nbsp;1) Interview Questions Resume
+Preparation</span></b><b><span style="font-family: &quot;Lucida Calligraphy&quot;; font-size: 18pt;"><o:p></o:p></span></b></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: left;">
+<b><span style="background: rgb(238, 238, 238); font-family: &quot;Lucida Calligraphy&quot;; font-size: 13.5pt;">=======================================================</span></b><b><span style="font-family: &quot;Lucida Calligraphy&quot;; font-size: 18pt;"><o:p></o:p></span></b></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: left;">
+<b><span style="background: rgb(238, 238, 238); font-family: &quot;Lucida Calligraphy&quot;; font-size: 13.5pt;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Course
+Design By: Dee R Chapagain (Dilip)</span></b></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: left;">
+<b><span style="background: rgb(238, 238, 238); font-family: &quot;Lucida Calligraphy&quot;; font-size: 13.5pt;">=======================================================</span></b></div>
+<div class="MsoNormal" style="line-height: normal; margin-bottom: 0.0001pt; text-align: left;">
+<br /></div>
+<div class="MsoNormal" style="line-height: normal;">
+
+</div>
+<div class="MsoNormal" style="text-align: left;">
+<br /></div>
+</div>
+</h2>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="container">
+    <h1>
+Register</h1>
+Please fill in this form to create an account.<br />
+
+    <hr />
+
+    <label for="email"><b>Email</b></label>
+    <input name="email" placeholder="Enter Email" required="" type="text" />
+
+    <label for="psw"><b>Password</b></label>
+    <input name="psw" placeholder="Enter Password" required="" type="password" />
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input name="psw-repeat" placeholder="Repeat Password" required="" type="password" />
+    <hr />
+    By creating an account you agree to our <a href="https://www.blogger.com/blogger.g?blogID=1137880089453320867#">Terms &amp; Privacy</a>.<br />
+
+
+
+    <button class="registerbtn" type="submit">Register</button> 
+  </div>
+<div class="container signin">
+    Already have an account? <a href="https://www.blogger.com/blogger.g?blogID=1137880089453320867#">Sign in</a>.<br />
+
+  </div>
+  <form action="mailto:chapagaindr.com" method="post" enctype="text/plain">
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container">
+ </div>
+<div id="title-crumbs" xmlns="http://www.w3.org/1999/xhtml">
+</div>
+<h3 align="left" id="sites-page-title-header" xmlns="http://www.w3.org/1999/xhtml">
+ <br />
+<span dir="ltr" id="sites-page-title" style="outline: none;" tabindex="-1">CONTACT</span>
+</h3>
+<div class="sites-canvas-main" id="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox" xmlns="http://www.w3.org/1999/xhtml"><tbody>
+<tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr">
+<div style="display: inline; float: right; margin: 5px 10px;">
+<a div="" href="https://sites.google.com/site/sampletrainingwebsite/contact-your-intructor/Contact.png?attredirects=0">
+<div class="sites-embed-align-left-wrapping-off">
+<div class="sites-embed-border-off sites-embed" style="width: 400px;">
+<div class="sites-embed-object-title" style="display: none;">
+Sample Training Website - Contact Your Instructor</div>
+<div class="sites-embed-content sites-embed-type-spreadsheet-form">
+<iframe allowtransparency="true" frameborder="0" height="600" id="994433361" marginheight="0" marginwidth="0" src="https://docs.google.com/spreadsheet/embeddedform?bc=transparent&amp;f=Arial%252C%2BVerdana%252C%2Bsans-serif&amp;hl=en&amp;htc=%2523666666&amp;key=tTOGx-GjRrYHA677INQoWCA&amp;lc=%2523336699&amp;pli=1&amp;tc=%2523333333&amp;ttl=0" title="Sample Training Website - Contact Your Instructor" width="100%"> </iframe></div>
+</div>
+</div>
+<div style="display: block; text-align: left;">
+<a href="https://sites.google.com/site/sampletrainingwebsite/contact-your-intructor/Contact.png?attredirects=0" imageanchor="1"><br /></a></div>
+<button class="registerbtn" type="submit">Submit</button> </form> 
+</a></div>
+</div>
+</td></tr>
+</tbody></table>
+</div>
+</div>
+</div>
+</td></form>
+</body></html>
+ 
+
+
+
+
